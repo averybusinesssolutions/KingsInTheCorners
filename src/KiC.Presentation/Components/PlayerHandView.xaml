@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="KiC.Presentation.Components.PlayerHandView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KiC.Presentation.Components" xmlns:viewmodels="clr-namespace:KiC.Presentation.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:PlayerHandViewModel}"
+             mc:Ignorable="d" 
+             Height="100">
+    <Grid>
+        <ListView x:Name="CardsListBox" 
+                 HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Stretch" 
+                 BorderThickness="1"
+                 BorderBrush="Black"
+                 Margin="10"
+                 ItemsSource="{Binding CardsInHand}"
+                 Background="Green">
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <StackPanel Orientation="Horizontal"></StackPanel>
+            </ItemsPanelTemplate>
+        </ListView.ItemsPanel>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Height="70" Width="50">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="{Binding Path=ImageSource}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </Grid>
+</UserControl>

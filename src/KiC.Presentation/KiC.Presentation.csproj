@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Components\resources\blank.png" />
+    <None Remove="Components\resources\card_8_heart.png" />
+    <None Remove="Components\resources\card_8_spade.png" />
+    <None Remove="Components\resources\card_9_clover.png" />
+    <None Remove="Components\resources\card_9_diamond.png" />
+    <None Remove="Components\resources\card_9_heart.png" />
+    <None Remove="Components\resources\card_9_spade.png" />
+    <None Remove="Components\resources\DefaultBack.png" />
+    <None Remove="Components\resources\DefaultBack_Stacked.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Components\resources\card_8_spade.png" />
+    <Resource Include="Components\resources\card_9_clover.png" />
+    <Resource Include="Components\resources\card_9_diamond.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiC.Infrastructure\KiC.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Components\resources\blank.png" />
+    <Resource Include="Components\resources\card_9_heart.png" />
+    <Resource Include="Components\resources\card_9_spade.png" />
+    <Resource Include="Components\resources\DefaultBack.png" />
+    <Resource Include="Components\resources\DefaultBack_Stacked.png" />
+  </ItemGroup>
+
+</Project>

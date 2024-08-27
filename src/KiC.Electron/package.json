@@ -1,0 +1,19 @@
+{
+  "name": "kic.electron",
+  "version": "1.0.0",
+  "description": "Kings in the Corners",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "vite": "^5.2.13"
+  },
+  "dependencies": {
+    "three": "^0.165.0"
+  }
+}

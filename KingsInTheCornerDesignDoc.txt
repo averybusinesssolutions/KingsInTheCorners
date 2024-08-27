@@ -1,0 +1,13 @@
+Card Game
+
+Board
+	- Contains game state
+	- Decks - hold cards 
+	- Cards - Suit and rank
+	
+Events
+	- Play card
+		- card has to be opposite color and one rank lower
+	- Draw Card
+	- Move Deck
+	
